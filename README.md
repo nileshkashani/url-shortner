@@ -1,10 +1,10 @@
-# ✂️ Trimly — Premium & Secure URL Shortener
+# Trimly — Premium & Secure URL Shortener
 
 **Trimly** is a high-end, minimalist URL shortening dashboard featuring a modern monochrome theme, auto-protocol correction, copy-to-clipboard interactions, local history tracking, and graceful redirect screens. Built for speed, search optimization, and visual excellence.
 
 ---
 
-## 🖼️ Interface Previews
+## Interface Previews
 
 ### Dashboard View
 ![Trimly Dashboard](client/public/dashboard.png)
@@ -14,18 +14,18 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **🖤 Minimalist Monochrome UI:** Designed with a professional dark theme using deep carbon/obsidian backgrounds, sharp contrast solid borders, and clean layout sizing.
-- **🔄 Auto-Protocol Corrections:** Validates URL strings on submission and automatically prepends `http://` if only a raw domain host is entered.
-- **📋 Copy-to-Clipboard Micro-interactions:** Immediate visual confirmation (button changes colors and turns into a checkmark icon) for 2 seconds upon copying a link.
-- **⏳ Graceful Redirection Loader:** Fully customized monochrome redirection screen with modern loading animations and automated error fallbacks if a code has expired.
-- **🗃️ Local Session Dashboard:** Stores the 10 most recent links inside client `localStorage` so users can track links across sessions without database authentications.
-- **🔍 SEO & Preview Optimization:** Pre-configured index rules, description parameters, Open Graph tags, and Twitter Cards to show rich preview cards on social channels.
+- **Minimalist Monochrome UI:** Designed with a professional dark theme using deep carbon/obsidian backgrounds, sharp contrast solid borders, and clean layout sizing.
+- **Auto-Protocol Corrections:** Validates URL strings on submission and automatically prepends `http://` if only a raw domain host is entered.
+- **Copy-to-Clipboard Micro-interactions:** Immediate visual confirmation (button changes colors and turns into a checkmark icon) for 2 seconds upon copying a link.
+- **Graceful Redirection Loader:** Fully customized monochrome redirection screen with modern loading animations and automated error fallbacks if a code has expired.
+- **Local Session Dashboard:** Stores the 10 most recent links inside client `localStorage` so users can track links across sessions without database authentications.
+- **SEO & Preview Optimization:** Pre-configured index rules, description parameters, Open Graph tags, and Twitter Cards to show rich preview cards on social channels.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Framework:** React 19 + Vite
@@ -40,7 +40,7 @@
 
 ---
 
-## 📂 Project Architecture
+## Project Architecture
 
 ```text
 ├── client/                     # Frontend Application
@@ -63,7 +63,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To spin up a local instance of Trimly, follow these steps:
 
@@ -107,7 +107,7 @@ To spin up a local instance of Trimly, follow these steps:
 
 ---
 
-## 🌐 Deployment Details
+## Deployment Details
 
 - **Frontend:** Deployed on **Vercel** with full client-side routing support (handled via `vercel.json` rewrites).
 - **Backend:** Deployed on **Render** (endpoints are wired up inside [api.js](client/src/api/api.js)).
@@ -115,5 +115,5 @@ To spin up a local instance of Trimly, follow these steps:
 ---
 
 <div align="center">
-  <p>Built with ❤️ by <strong>Nilesh Kashani</strong></p>
+  <p>Built by <strong>Nilesh Kashani</strong></p>
 </div>
