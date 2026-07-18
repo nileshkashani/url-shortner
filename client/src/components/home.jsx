@@ -54,6 +54,7 @@ const Home = () => {
     }
 
     let urlToSubmit = url.trim()
+    
     // Auto-prepend http:// if no protocol exists
     if (!/^https?:\/\//i.test(urlToSubmit)) {
       urlToSubmit = 'http://' + urlToSubmit
