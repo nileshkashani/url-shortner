@@ -11,7 +11,7 @@ const Home = () => {
 
   // Load history from local storage on mount
   useEffect(() => {
-    const savedHistory = localStorage.getItem('snaplink_history')
+    const savedHistory = localStorage.getItem('trimly_history') || localStorage.getItem('snaplink_history')
     if (savedHistory) {
       try {
         setHistory(JSON.parse(savedHistory))
@@ -31,7 +31,7 @@ const Home = () => {
     }
     const updatedHistory = [newItem, ...history].slice(0, 10) // Limit to 10 items
     setHistory(updatedHistory)
-    localStorage.setItem('snaplink_history', JSON.stringify(updatedHistory))
+    localStorage.setItem('trimly_history', JSON.stringify(updatedHistory))
   }
 
   const validateUrl = (string) => {
@@ -97,6 +97,7 @@ const Home = () => {
 
   const clearHistory = () => {
     setHistory([])
+    localStorage.removeItem('trimly_history')
     localStorage.removeItem('snaplink_history')
   }
 
@@ -104,8 +105,7 @@ const Home = () => {
     <div className="app-wrapper">
       <header>
         <a href="/" className="logo-container">
-          <div className="logo-icon">S</div>
-          <span className="logo-text">SnapLink</span>
+          <span className="logo-text">Trimly</span>
         </a>
         <div style={{ fontSize: '14px', color: 'var(--text-secondary)', fontWeight: 500 }}>
           v1.0
@@ -119,7 +119,7 @@ const Home = () => {
             <span>Expand Your Reach</span>
           </h1>
           <p className="hero-subtitle">
-            SnapLink makes your long, cluttered links clean, trackable, and shareable instantly.
+            Trimly makes your long, cluttered links clean, trackable, and shareable instantly.
           </p>
         </section>
 
@@ -253,7 +253,7 @@ const Home = () => {
       </main>
 
       <footer>
-        <p>&copy; {new Date().getFullYear()} SnapLink. All rights reserved. Crafted for visual excellence.</p>
+        <p>&copy; {new Date().getFullYear()} Trimly. All rights reserved. Built by <strong>Nilesh Kashani</strong>.</p>
       </footer>
     </div>
   )

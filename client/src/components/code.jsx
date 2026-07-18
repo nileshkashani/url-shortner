@@ -53,7 +53,7 @@ const Code = () => {
               margin: '0 auto' 
             }}
           >
-            Go to SnapLink
+            Go to Trimly
           </Link>
         </div>
       </div>
